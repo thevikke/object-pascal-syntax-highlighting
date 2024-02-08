@@ -1,0 +1,79 @@
+{
+  "name": "object-pascal-syntax-highlighting",
+  "displayName": "Object Pascal Syntax Highlighter",
+  "description": "Provides syntax highlighting in Pascal and Object Pascal files. Fork of Pascal Language Basics by AnsonYeung.",
+  "version": "0.0.1",
+  "publisher": "thevikke",
+  "license": "MIT",
+  "icon": "images/Pascal.png",
+  "repository": {
+    "type": "git",
+    // TODO
+    "url": "https://github.com/AnsonYeung/vscode-object-pascal-syntax-highlighting"
+  },
+  "bugs": {
+    // TODO
+    "url": "https://github.com/AnsonYeung/vscode-object-pascal-syntax-highlighting/issues",
+    "email": "s151204@tanghin.edu.hk"
+  },
+  "engines": {
+    "vscode": "^1.30.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "pascal",
+        "aliases": [
+          "Pascal",
+          "pascal"
+        ],
+        "extensions": [
+          ".pas",
+          ".pp"
+        ],
+        "configuration": "./language-configuration.json"
+      },
+      {
+        "id": "objectpascal",
+        "aliases": [
+          "ObjectPascal",
+          "objectpascal"
+        ],
+        "extensions": [
+          ".pas"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "pascal",
+        "scopeName": "source.pascal",
+        "path": "./syntaxes/pascal.tmLanguage.json",
+        "embeddedLanguages": {
+          "meta.embedded.asm": "source.asm"
+        }
+      },
+      {
+        "language": "objectpascal",
+        "scopeName": "source.pascal",
+        "path": "./syntaxes/pascal.tmLanguage.json",
+        "embeddedLanguages": {
+          "meta.embedded.asm": "source.asm"
+        }
+      }
+    ]
+  },
+  "scripts": {
+    "prepare": "js-yaml syntaxes/pascal.tmLanguage.yaml > syntaxes/pascal.tmLanguage.json",
+    "clean": "rm -f syntaxes/pascal.tmLanguage.json",
+    "patch": "npm run prepare && vsce publish patch && npm run clean"
+  },
+  "devDependencies": {
+    "js-yaml": "^3.13.1",
+    "vsce": "^2.7.0"
+  }
+}
