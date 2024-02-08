@@ -1,6 +1,6 @@
 .vscode/**
 images/Pascal.xcf
-syntaxes/pascal.tmLanguage.yaml
+syntaxes/objectpascal.tmLanguage.yaml
 .gitignore
 vsc-extension-quickstart.md
 object-pascal-syntax-highlighting.code-workspace
