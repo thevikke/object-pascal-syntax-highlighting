@@ -2,9 +2,10 @@
 
 This extension provides syntax highlighting for Object Pascal code. It is built upon an existing extension: [Pascal Language Basics](https://github.com/AnsonYeung/vscode-pascal-language-basics). Pascal Language Basics does not support Object Pascal, therefore we decided to fork it and add the necessary support in this extension.
 
+![An example program](images/Example.png)
+
 ## Features
 
-![An example program](images/Example.png)
 Provides syntax highlighting for Object Pascal code.
 
 - Classes
