@@ -8,13 +8,11 @@
   "icon": "images/Pascal.png",
   "repository": {
     "type": "git",
-    // TODO
-    "url": "https://github.com/AnsonYeung/vscode-object-pascal-syntax-highlighting"
+    "url": "https://github.com/thevikke/object-pascal-syntax-highlighting"
   },
   "bugs": {
-    // TODO
-    "url": "https://github.com/AnsonYeung/vscode-object-pascal-syntax-highlighting/issues",
-    "email": "s151204@tanghin.edu.hk"
+    "url": "https://github.com/thevikke/object-pascal-syntax-highlighting/issues",
+    "email": "kristian.tuusjarvi@gmail.com"
   },
   "engines": {
     "vscode": "^1.30.0"
