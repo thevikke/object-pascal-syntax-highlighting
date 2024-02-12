@@ -2,7 +2,7 @@
   "name": "object-pascal-syntax-highlighting",
   "displayName": "Object Pascal Syntax Highlighter",
   "description": "Provides syntax highlighting Object Pascal files. Fork of Pascal Language Basics by Anson Yeung.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "thevikke",
   "license": "MIT",
   "icon": "images/Pascal.png",

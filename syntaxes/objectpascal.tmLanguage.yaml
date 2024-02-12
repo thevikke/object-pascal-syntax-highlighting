@@ -387,7 +387,7 @@ repository:
                 include: '#comment'
             -
                 name: storage.type.method.objectpascal
-                match: '(?i)(private|public|protected|published|strict\s+private)'
+                match: '(?i)(private|public|protected|published|strict\s+private|strict\s+protected|overload)'
             -
                 include: '#function-declaration'
             -
