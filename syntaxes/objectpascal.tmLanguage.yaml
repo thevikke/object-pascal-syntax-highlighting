@@ -178,7 +178,7 @@ repository:
                 match: '(?i)([_a-z][0-9_a-z]*)'
     function-declaration:
         name: meta.function.objectpascal
-        begin: '(?i)\b(constructor|destructor|procedure|function|class\s+function)\b'
+        begin: '(?i)\b(constructor|destructor|procedure|function|class\s+function|class\s+procedure)\b'
         beginCaptures:
             '1':
                 name: storage.type.objectpascal
@@ -387,7 +387,7 @@ repository:
                 include: '#comment'
             -
                 name: storage.type.method.objectpascal
-                match: '(?i)(private|public|protected|published|strict\s+private|strict\s+protected|overload)'
+                match: '(?i)(private|public|protected|published|strict\s+private|strict\s+protected|virtual|abstract|override|overload|class\s+function|class\s+procedure|class\s+var|class\s+property|class\s+constructor|class\s+destructor|property|constructor|destructor|function|procedure|var|type|const|class\s+procedure)\b'
             -
                 include: '#function-declaration'
             -
